@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* Font Embedded */
 .mulish{
     font-family: "Mulish", sans-serif;
@@ -15,7 +20,7 @@
   /* Banner Styles */
   .banner-container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto;
     margin-bottom: 100px;
  }
 
@@ -158,8 +163,8 @@ input, select{
     width: 100%;
 }
 
-
-@media screen and (max-width: 576px) {
+/* Responsive Layout */
+@media screen and (max-width:576px) {
 .links{
     display: none;
 }
@@ -172,12 +177,12 @@ input, select{
 .banner-container{
     width: 100%;
     margin: 3rem auto;
+    width: 75%;
 }
 
 .banner-image-container{
     padding: 4rem;
     border-radius: 20px;
-    width: 75%;
 
 }
 .explore-container h1{
@@ -204,4 +209,53 @@ input, select{
 }  
  
 
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner-container{
+        width: 100%;
+        margin: 3rem auto;
+        width: 75%;
+    }
+    .links{
+        display: none;
+    }
+    
+    .bars{
+        display: block;
+        font-size: 26px;
+    }
+    .explore-container h1{
+        font-size: 3rem;
+    }
+
+    .banner-image-container{
+        border-radius: 20px;
+    }
+    .input-container{
+        flex-direction: column;
+        padding:16px;
+    }
+    .explore-container h1{
+        font-size: 26px;
+    }
+    
+    .explore-container p{
+        width: 100%;
+    }
+    
+    .input-container{
+        flex-direction: column;
+        padding:16px;
+    }
+    .input-container input{
+        max-width: 230px;
+        padding: 16px;
+        width: 100%;
+    }
+    .input-container select,
+    .input-container button{
+       max-width: 255px;
+       width: 100%;
+    }  
 }
