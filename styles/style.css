@@ -1,0 +1,207 @@
+/* Font Embedded */
+.mulish{
+    font-family: "Mulish", sans-serif;
+  }
+
+/* Shared Items */
+.display-flex{
+    display: flex;
+}
+
+.bars{
+    display: none;
+}
+
+  /* Banner Styles */
+  .banner-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+ }
+
+.brand-heading{
+    align-items: center;
+    gap: 15px;
+}
+.brand-logo{
+    max-width: 22px;
+    height: 20px;
+}
+
+
+.brand-heading h1{
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.lists{
+    gap:40px;
+}
+
+nav > ul{
+    list-style: none;
+}
+
+nav > ul a{
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.travel{
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(255, 84, 0);
+}
+
+#home{
+    color: rgb(255, 84, 0);
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Banner Images Styles */
+.banner-image-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    background:linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url(../Images/banner.png);
+    padding: 7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.explore-container h1{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+
+.explore-container p{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom:48px;
+    max-width: 676px;
+}
+
+.input-container{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    gap: 24px;
+    align-items: center;
+}
+
+.input-container input{
+    border: none;
+    max-width: 174px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.5);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+.input-container select{
+    border: none;
+    max-width: 174px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.5);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+input, select{
+    width: 100%;
+}
+
+.btn-primary{
+    max-width: 174px;
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px;
+    border: 1px solid rgb(255, 84, 0);
+
+}
+.btn-primary{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+.links{
+    display: none;
+}
+
+.bars{
+    display: block;
+    font-size: 26px;
+}
+
+.banner-container{
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.banner-image-container{
+    padding: 4rem;
+    border-radius: 20px;
+    width: 75%;
+
+}
+.explore-container h1{
+    font-size: 26px;
+}
+
+.explore-container p{
+    width: 100%;
+}
+
+.input-container{
+    flex-direction: column;
+    padding:16px;
+}
+.input-container input{
+    max-width: 230px;
+    padding: 16px;
+    width: 100%;
+}
+.input-container select,
+.input-container button{
+   max-width: 255px;
+   width: 100%;
+}  
+ 
+
+}
