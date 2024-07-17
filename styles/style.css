@@ -629,6 +629,7 @@ border: 1px solid rgb(255, 84, 0);
 }
 
 .form-text{
+    max-width: 474px;
     padding: 40px;
     border: 1px solid rgb(255, 84, 0);
     border-radius: 16px;
@@ -655,6 +656,7 @@ border: 1px solid rgb(255, 84, 0);
 
 
 .form-text input{
+    max-width: 393px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     color: rgba(19, 19, 24, 0.3);
@@ -666,11 +668,13 @@ border: 1px solid rgb(255, 84, 0);
     border: none;
     margin-bottom: 16px;
     padding: 16px 251px 16px 20px;
+    box-sizing: border-box;
 
 }
 
 .form-text form{
     border-top: 1px solid rgba(19, 19, 24, 0.1);
+    
 
 }
 
@@ -684,6 +688,7 @@ border: 1px solid rgb(255, 84, 0);
     line-height: 25px;
     padding: 14px 150px;
     border: none;
+    box-sizing: border-box;
 }
 
 .btn-seventh{
@@ -691,6 +696,7 @@ border: 1px solid rgb(255, 84, 0);
     background: rgb(255, 84, 0);
     padding: 35px 45px;
     border: none;
+   
 }
 .btn-seventh h3{
     color: rgb(255, 255, 255);
@@ -706,10 +712,15 @@ border: 1px solid rgb(255, 84, 0);
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 30px;
+    
 }
 
 .form-image{
     position: relative;
+    max-width: 672px;
+}
+.form-image img{
+    width: 100%;
 }
 
 .btn{
@@ -717,6 +728,7 @@ border: 1px solid rgb(255, 84, 0);
     top: 50%;
     left: 45%;
     transform: rotate(-25deg);
+    
 }
 
 
@@ -758,14 +770,16 @@ border: 1px solid rgb(255, 84, 0);
     padding:16px;
 }
 .input-container input{
-    max-width: 230px;
+    max-width: 255px;
     padding: 16px;
     width: 100%;
+    box-sizing: border-box;
 }
 .input-container select,
 .input-container button{
    max-width: 255px;
    width: 100%;
+   box-sizing: border-box;
 } 
 
 .popular-tours-container,
@@ -865,11 +879,55 @@ article > ul{
     margin-left: 15px;
 }
 
+/* Form Container */
 
+.form-container{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 0 auto;
+}
 
+.form-text{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 42px 24px 24px;
+}
+.form-image{
+    max-width: 465px;
+    margin: 0 auto;
+}
+.form-image img{
+    width: 100%;
+}
 
+.btn-seventh{
+    padding:5px 50px 5px 15px;
+   
+}
+.btn-seventh h3{
+    font-size: 1.25rem;
+    text-align: center;
+}
 
- 
+.btn-seventh p{
+    font-size: 0.9rem;
+    text-align: center;
+
+    
+}
+
+.form-image{
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-25deg);
+    
+}
 
 }
 
